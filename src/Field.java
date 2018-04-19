@@ -1,8 +1,9 @@
 
 public class Field {
 	
-	boolean freeField;
-	byte player = 0; //[0-3] 0=empty, 1=player unten, dann uhrzeigersinn
+	boolean blockedField; //if: own player on field, field gone, two stones on field
+	byte bottomStone = 0; //[0-3] 0=empty, 1=player unten, dann uhrzeigersinn
+	byte topStone = 0;		//[0-3] 0=empty, 1=player oben, dann uhrzeigersinn
 	int x; 			 //x-Koordinate
 	int y;			 //y-Koordinate
 	
