@@ -8,16 +8,16 @@ public class Field {
 	int y;			 //y-Koordinate
 	
 	public boolean isFreeField() {
-		return freeField;
+		return blockedField;
 	}
 	public void setFreeField(boolean freeField) {
-		this.freeField = freeField;
+		this.blockedField = freeField;
 	}
 	public byte getPlayer() {
-		return player;
+		return bottomStone;
 	}
 	public void setPlayer(byte player) {
-		this.player = player;
+		this.bottomStone = player;
 	}
 	public int getX() {
 		return x;
